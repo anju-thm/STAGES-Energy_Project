@@ -1,0 +1,18 @@
+[project]
+name = "stages"
+version = "0.1.0"
+requires-python = ">=3.12"
+dependencies = [
+    "marimo>=0.23.2",
+    "pandas>=3.0.2",
+    "requests>=2.33.1",
+    "altair>=5.0.0",
+    "vegafusion>=2.0.0",
+    "matplotlib>=3.10.9",
+    "plotly>=6.7.0",
+    "vl-convert-python>=1.9.0.post1",
+    "pyarrow>=13.0.0",
+    "sqlalchemy>=2.0.50",
+    "statsmodels>=0.14.6",
+    "seaborn>=0.13.2",
+]
