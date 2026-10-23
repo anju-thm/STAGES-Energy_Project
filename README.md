@@ -21,8 +21,7 @@ The project investigates:
 - the shift from net exporter to net importer;
 - whether the import shift is consistent with shortage or market-based
   operation in an interconnected European electricity system; and
-- the role of storage in renewable self-sufficiency.
-
+- the role of storage and renewable expansion in self-sufficiency, including the cost of Li-ion LFP storage.
 ## Repository structure
 
 ```text
@@ -132,6 +131,9 @@ The analyses use public electricity-system and weather data, primarily from:
 
 - **SMARD / Bundesnetzagentur** for German generation, demand, prices, and
   commercial foreign-trade data;
+-  Marktstammdatenregister (MaStR) (Bundesnetzagentur)	Public register	Installed battery storage: capacity, technology, size category and location by federal state.
+-  IRENA Electricity Storage Cost-of-Service Tool v2.0 (2025)	Spreadsheet tool	Technical and cost assumptions for the Levelized Cost of Storage of utility-scale Li-ion LFP batteries.
+-  German Renewable Energy Sources Act (EEG 2023)	Legal text	2030 renewable capacity targets used in the expansion scenarios.
 - **Energy-Charts / Fraunhofer ISE** for bilateral cross-border commercial
   exchanges; and
 - **Bright Sky / DWD** for optional weather observations used in the detailed
