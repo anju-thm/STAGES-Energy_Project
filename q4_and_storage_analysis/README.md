@@ -1,8 +1,8 @@
-German Energy System Analysis (STAGES Project)
+#German Energy System Analysis (STAGES Project)
 
 A marimo reactive notebook that pulls, cleans and analyzes German electricity generation, demand, trade, storage and weather data for 2025. It is the data pipeline behind the thesis chapters on the Q4 2025 electricity balance, storage infrastructure, expansion scenarios, cost analysis and renewable self-sufficiency.
 
-What it does
+#What it does
 Loads hourly German electricity generation, demand/consumption and cross-border trade data from SMARD (2025-01-01 to 2026-01-01).
 Builds the Q4 2025 electricity balance: demand vs. domestic generation, renewable share, monthly breakdown (Oct/Nov/Dec), and net import/export totals.
 Loads existing battery storage capacity from a local MaStR (Marktstammdatenregister) database — by federal state and by application category.
@@ -12,12 +12,14 @@ Builds renewable self-reliance scenarios: how much additional renewable capacity
 Loads DWD weather data (wind speed, solar radiation, temperature, humidity) from multiple stations and correlates it with renewable generation (e.g. solar output vs. radiation and temperature).
 Saves key figures to figures
 
-Files this notebook expects alongside it (not included here)
+#Files this notebook expects alongside it
 utils.py — must define load_smard_series() and load_smard_market_trade(). The notebook imports both at the top; it will not run without this module.
 data/mastr_storage_aggregated.db — a SQLite database with battery_summary and battery_by_state tables, used for the existing storage-infrastructure section. The notebook raises FileNotFoundError if it isn't found at data/mastr_storage_aggregated.db relative to the script.
 
-Structure
-Section	What it covers
+#Structure
+#Section	What it covers
+
+
 Loading SMARD generation data	Hourly generation by source (renewable + conventional), Jan 2025–Jan 2026
 Visualization of generation	Interactive time series, renewables and conventional sources separately
 Loading SMARD consumption/load	Hourly demand, incl. pumped-storage consumption
